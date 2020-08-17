@@ -9,7 +9,6 @@ namespace chaos
     public partial class main_frame : Form
     {
         BackgroundWorker bw = new BackgroundWorker();
-        //
         Random rnd = new Random();
         figure_class[] figures = new figure_class[2];
         Point null_point;
@@ -28,7 +27,7 @@ namespace chaos
                 figures[i] = new figure_class();
                 figures[i].number_of_vertices = 3;
                 figures[i].update();
-                for (int j = 0; j<3; ++j) figures[i].position[j] = null_point;
+                for (int j = 0; j < 3; ++j) figures[i].position[j] = null_point;
             }
         }
 
@@ -87,7 +86,6 @@ namespace chaos
                 case 2:
                     {
                         main_script_background();
-                        log("123");
                         pbrush.point_ = e.Location;
                         pbrush.existence = true;
                         paint_point(e.Location);
@@ -98,14 +96,13 @@ namespace chaos
                     log("КАВО");
                     break;
             }
-            
+
         }
-        
+
         public void paint_point(Point p)
         {
             Pen pen_ = new Pen(Color.Black);
-            //log("***");
-            output_panel.CreateGraphics().DrawEllipse(pen_, p.X, p.Y,1,1);
+            output_panel.CreateGraphics().DrawEllipse(pen_, p.X, p.Y, 1, 1);
         }
 
         private void log(string str)
@@ -113,13 +110,12 @@ namespace chaos
             space_lable.Text = space_lable.Text + "\n" + str;
         }
 
-        
-
 
         private void paint_button_Click(object sender, EventArgs e)
         {
             paint(figures[0]);
         }
+
 
         private void paint(figure_class fig)
         {
@@ -134,18 +130,17 @@ namespace chaos
 
         private void paly_button_Click(object sender, EventArgs e)
         {
-            //log(proces.ToString());
             proces = !proces;
-            //log(proces.ToString());
         }
+
 
         private void start_poin_button_Click(object sender, EventArgs e)
         {
             start_poin_button.Enabled = false;
             state = 2;
             Console.WriteLine("test1");
-
         }
+
 
         async private void main_script_background()
         {
@@ -157,15 +152,13 @@ namespace chaos
                 {
                     while (proces)
                     {
-                        //Console.WriteLine("test");
-
                         pbrush.take_new_position(figures[0].position[ran]);
                         paint_point(pbrush.point_);
                         ran = rnd.Next(3);
                     }
                 }
-                
-            });   
+
+            });
         }
     }
 }

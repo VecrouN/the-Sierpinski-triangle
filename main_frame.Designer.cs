@@ -51,20 +51,20 @@
             // UI_panel
             // 
             this.UI_panel.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.UI_panel.Controls.Add(this.stop_button);
             this.UI_panel.Controls.Add(this.start_poin_button);
             this.UI_panel.Controls.Add(this.set_triangle_1_button);
             this.UI_panel.Controls.Add(this.space_lable);
             this.UI_panel.Controls.Add(this.paly_button);
-            this.UI_panel.Controls.Add(this.stop_button);
             this.UI_panel.Controls.Add(this.paint_button);
             this.UI_panel.Location = new System.Drawing.Point(12, 12);
             this.UI_panel.Name = "UI_panel";
-            this.UI_panel.Size = new System.Drawing.Size(176, 578);
+            this.UI_panel.Size = new System.Drawing.Size(176, 703);
             this.UI_panel.TabIndex = 1;
             // 
             // start_poin_button
             // 
-            this.start_poin_button.Location = new System.Drawing.Point(3, 446);
+            this.start_poin_button.Location = new System.Drawing.Point(3, 571);
             this.start_poin_button.Name = "start_poin_button";
             this.start_poin_button.Size = new System.Drawing.Size(170, 39);
             this.start_poin_button.TabIndex = 8;
@@ -75,7 +75,7 @@
             // set_triangle_1_button
             // 
             this.set_triangle_1_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.set_triangle_1_button.Location = new System.Drawing.Point(3, 356);
+            this.set_triangle_1_button.Location = new System.Drawing.Point(3, 481);
             this.set_triangle_1_button.Name = "set_triangle_1_button";
             this.set_triangle_1_button.Size = new System.Drawing.Size(170, 39);
             this.set_triangle_1_button.TabIndex = 1;
@@ -89,13 +89,13 @@
             this.space_lable.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.space_lable.Location = new System.Drawing.Point(3, 0);
             this.space_lable.Name = "space_lable";
-            this.space_lable.Size = new System.Drawing.Size(170, 353);
+            this.space_lable.Size = new System.Drawing.Size(170, 478);
             this.space_lable.TabIndex = 6;
             // 
             // paly_button
             // 
             this.paly_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.paly_button.Location = new System.Drawing.Point(3, 491);
+            this.paly_button.Location = new System.Drawing.Point(3, 616);
             this.paly_button.Name = "paly_button";
             this.paly_button.Size = new System.Drawing.Size(170, 39);
             this.paly_button.TabIndex = 7;
@@ -106,7 +106,7 @@
             // stop_button
             // 
             this.stop_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.stop_button.Location = new System.Drawing.Point(3, 536);
+            this.stop_button.Location = new System.Drawing.Point(3, 661);
             this.stop_button.Name = "stop_button";
             this.stop_button.Size = new System.Drawing.Size(170, 39);
             this.stop_button.TabIndex = 4;
@@ -116,7 +116,7 @@
             // paint_button
             // 
             this.paint_button.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.paint_button.Location = new System.Drawing.Point(3, 401);
+            this.paint_button.Location = new System.Drawing.Point(3, 526);
             this.paint_button.Name = "paint_button";
             this.paint_button.Size = new System.Drawing.Size(170, 39);
             this.paint_button.TabIndex = 3;
